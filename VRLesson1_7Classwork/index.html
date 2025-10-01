@@ -6,7 +6,22 @@
     <a-scene>
       <a-assets>
         <img id="texture" src="pacman_maze.jpg" />
+        <img id="Texture" src="GEyes.jpg" />
       </a-assets>
+
+      <a-entity position="0 1.5 -3" rotation="0 0 0">
+        <a-sphere color="yellow" radius="1" phi-start="30" phi-length="300" rotation="90 90 0" side="double"></a-sphere>
+        <a-circle position="0 0 0" rotation="58 0 0" color="yellow"> </a-circle>
+        <a-circle position="0 0 0" rotation="-58 0 0" color="yellow"> </a-circle>
+      </a-entity>
+
+      <a-entity position="0 1.5 0">
+        <a-sphere position="0 0 0" radius=".5" color="#FCD299"> </a-sphere>
+        <a-sphere position="0 0 3" radius=".5" color="#FCD299"> </a-sphere>
+        <a-sphere position="0 0 6" radius=".5" color="#FCD299"> </a-sphere>
+        <a-sphere position="0 0 9" radius=".5" color="#FCD299"> </a-sphere>
+      </a-entity>
+
       <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" repeat="5 5" src="#texture"></a-plane>
       <a-sky color="black"></a-sky>
     </a-scene>
