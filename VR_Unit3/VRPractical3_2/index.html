@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+    <body>
+      <h1>Hi</h1>
+      <a-scene >
+        <!-- Car -->
+      <a-entity  id="Truck" position="0 1 0" width="3" height="2" depth="6" color="black">
+      <!-- Car Body -->
+        <a-box position="0 0.6 0" width="2.5" height="0.8" depth="5" color="#4CC3D9"></a-box>
+        <a-box position="0 1.5 0s" width="2.5" height="1" depth="2" color="#4CC3D9"></a-box>
+      <!-- Windshield -->
+        <a-box position="0 1.1 1" width="2.49" height="1.4" depth="1" rotation="-45 0 0" color="#88ccee"></a-box>
+      <!-- side mirrors -->
+        <a-box position="-1.4 1.4 1" width="0.1" height="0.2" depth="0.5" color="black"></a-box>
+        <a-box position="1.4 1.4 1" width="0.1" height="0.2" depth="0.5" color="black"></a-box>
+      <!-- Bumpers -->
+        <a-box position="0 0.3 2.7" width="2.6" height="0.4" depth="0.2" color="gray"></a-box>
+        <a-box position="0 0.3 -2.7" width="2.6" height="0.4" depth="0.2" color="gray"></a-box>
+      <!---->
+        <a-box position="0 1  -1.2" width="2.4" height="0.8" depth="2.5" color="#3A9AD9" opacity="0.8"></a-box>
+        
+      <!-- Headlights -->
+        <a-box position="-0.9 0.6 2.5" width="0.4" height="0.3" depth="0.1" color="yellow"></a-box>
+        <a-box position="0.9 0.6 2.5" width="0.4" height="0.3" depth="0.1" color="yellow"></a-box>
+
+      <!-- Taillights -->
+        <a-box position="-0.9 0.6 -2.5" width="0.4" height="0.3" depth="0.1" color="red"></a-box>
+        <a-box position="0.9 0.6 -2.5" width="0.4" height="0.3" depth="0.1" color="red"></a-box>
+
+      <!-- License Plate -->
+        <a-box position="0 0.7 -2.55" width="0.8" height="0.3" depth="0.05" color="white"></a-box>
+
+      <!-- Wheels -->
+      <!-- Front Left -->
+        <a-torus position="-1.4 0 1.8" radius="0.6" radius-tubular="0.15" rotation="0 90 0" color="black"></a-torus>
+        <a-cylinder position="-1.4 0 1.8" radius="0.5" height="0.3" rotation="0 0 90" color="gray"></a-cylinder>
+
+      <!-- Front Right -->
+        <a-torus position="1.4 0 1.8" radius="0.6" radius-tubular="0.15" rotation="0 90 0" color="black"></a-torus>
+        <a-cylinder position="1.4 0 1.8" radius="0.5" height="0.3" rotation="0 0 90" color="gray"></a-cylinder>
+
+      <!-- Back Left -->
+        <a-torus position="-1.4 0 -1.8" radius="0.6" radius-tubular="0.15" rotation="0 90 0" color="black"></a-torus>
+        <a-cylinder position="-1.4 0 -1.8" radius="0.5" height="0.3" rotation="0 0 90" color="gray"></a-cylinder>
+
+      <!-- Back Right -->
+        <a-torus position="1.4 0 -1.8" radius="0.6" radius-tubular="0.15" rotation="0 90 0" color="black"></a-torus>
+        <a-cylinder position="1.4 0 -1.8" radius="0.5" height="0.3" rotation="0 0 90" color="gray"></a-cylinder>
+      </a-entity>
+
+
+
+
+
+
+
+        <a-plane color="green" position="0 0 -5" rotation="-90 0 0" width="50" height="50"></a-plane>
+        <a-sky color="skyblue"></a-sky>
+
+        <a-camera position="0 2 0">
+          <a-cursor raycaster="objects: [interact]"></a-cursor>
+        </a-camera>
+        
+      </a-scene>
+
+    </body>
+</html>
